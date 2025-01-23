@@ -42,7 +42,7 @@ export function PokemonCard({ pokemon, onOpenModal }: PokemonCardProps) {
     };
 
     return (
-        <div className="border rounded-lg p-4 shadow-md">
+        <div className="border rounded-lg p-4 shadow-md bg-gradient-to-r from-slate-50 via-slate-100 to-slate-300 ">
             <div className="flex justify-between">
                 <button
                     onClick={toggleFavorite}
@@ -60,8 +60,8 @@ export function PokemonCard({ pokemon, onOpenModal }: PokemonCardProps) {
 
                 {pokemon.types && (
                     <>
-                        <span className="bg-cyan-600 py-1 px-2 rounded-xl">{pokemon.types[0]}</span>
-                        <span className={`${pokemon.types[1] ? 'bg-orange-600 py-1 px-2 rounded-xl' : ''}`}>{pokemon.types[1]}</span>
+                        <span className="bg-gradient-to-r from-teal-400 via-cyan-500 to-sky-400 py-1 px-2 rounded-xl">{pokemon.types[0]}</span>
+                        <span className={`${pokemon.types[1] ? 'bg-gradient-to-r from-orange-400 via-orange-500 to-orange-400 py-1 px-2 rounded-xl' : ''}`}>{pokemon.types[1]}</span>
                     </>
                 )}
             </div>

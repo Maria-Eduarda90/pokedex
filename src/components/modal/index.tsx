@@ -12,7 +12,7 @@ export default function ModalPokemon({ isOpen, pokemon, onClose }: ModalPokemonP
     return (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg w-full max-w-md shadow-lg">
-                <div className="text-center rounded-lg bg-slate-200 p-2">
+                <div className="text-center rounded-lg bg-gradient-to-r from-slate-200 via-slate-300 to-slate-400  p-2">
                     <h2 className="text-xl font-bold mb-4 text-cyan-700">{pokemon.name}</h2>
                 </div>
                 <div className="flex flex-col p-6 gap-4">
@@ -21,8 +21,8 @@ export default function ModalPokemon({ isOpen, pokemon, onClose }: ModalPokemonP
 
                         {pokemon.types && (
                             <>
-                                <span className="bg-cyan-600 py-1 px-2 rounded-xl">{pokemon.types[0]}</span>
-                                <span className={`${pokemon.types[1] ? 'bg-orange-600 py-1 px-2 rounded-xl' : ''}`}>{pokemon.types[1]}</span>
+                                <span className="bg-gradient-to-r from-teal-400 via-cyan-500 to-sky-400 py-1 px-2 rounded-xl">{pokemon.types[0]}</span>
+                                <span className={`${pokemon.types[1] ? 'bg-gradient-to-r from-orange-400 via-orange-500 to-orange-400 py-1 px-2 rounded-xl' : ''}`}>{pokemon.types[1]}</span>
                             </>
                         )}
                     </div>
