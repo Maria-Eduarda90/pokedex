@@ -7,8 +7,9 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center bg-gradient-to-r from-teal-400 via-cyan-500 to-sky-400  text-white w-full md:w-1/2 h-full p-8 gap-4">
         <h1 className="text-6xl font-bold mb-4">Bem vindo à pokedex</h1>
         <p className="text-lg mb-4 text-center max-w-2xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id debitis natus cupiditate, temporibus ullam enim.
+          Mergulhe no mundo dos Pokémons e descubra uma variedade incrível de criaturas com habilidades únicas. Explore suas características, evoluções e histórias para se tornar um verdadeiro mestre Pokémon!
         </p>
+
         <a
           href="/home"
           className="relative inline-flex items-center justify-center px-8 py-2.5 overflow-hidden font-medium text-cyan-600 transition duration-300 ease-out border-2 border-cyan-600 rounded shadow-md group w-full sm:w-auto">

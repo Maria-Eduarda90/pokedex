@@ -5,12 +5,13 @@ import { PokemonCard } from "@/components/card";
 import Pagination from "@/components/pagination";
 import ModalPokemon from "@/components/modal";
 
-interface Pokemon {
+export interface Pokemon {
     id: number;
     name: string;
     image: string;
     height: number;
     weight: number;
+    types?: string[]
 }
 
 interface PokemonListProps {

@@ -11,6 +11,7 @@ interface Pokemon {
     image: string;
     height: number;
     weight: number;
+    types?: string[];
 }
 
 interface PokemonCardProps {
@@ -55,8 +56,15 @@ export function PokemonCard({ pokemon, onOpenModal }: PokemonCardProps) {
             </div>
             <img src={pokemon.image} alt={pokemon.name} className="w-full h-32 object-contain mb-4" />
             <h2 className="text-lg font-bold mb-2 text-center">{pokemon.name}</h2>
-            <p>Height: {pokemon.height}</p>
-            <p>Weight: {pokemon.weight}</p>
+            <div className="flex justify-center gap-2 text-white">
+
+                {pokemon.types && (
+                    <>
+                        <span className="bg-cyan-600 py-1 px-2 rounded-xl">{pokemon.types[0]}</span>
+                        <span className={`${pokemon.types[1] ? 'bg-orange-600 py-1 px-2 rounded-xl' : ''}`}>{pokemon.types[1]}</span>
+                    </>
+                )}
+            </div>
         </div>
     );
 }
